@@ -1,0 +1,47 @@
+  
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top scrolling-navbar">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><strong>RASOI</strong></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7" aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
+                    <ul class="navbar-nav mr-auto afterlogin">
+                        <li class="nav-item">
+                            <a class="nav-link" href="Dashboard.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item" ng-if="credentials.role === 'Superadmin'">
+                            <a class="nav-link" href="Companies.html">Companies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Users.html">Users</a>
+                        </li>
+						<li class="nav-item">
+                            <a class="nav-link" href="Orders.html">Orders</a>
+                        </li>
+						<li class="nav-item">
+                            <a class="nav-link" href="Offers.html">Offers</a>
+                        </li>
+						<li class="nav-item">
+                            <a class="nav-link" href="MenuCards.html">Menu Cards</a>
+                        </li>
+						
+						<li class="nav-item">
+                            <a class="nav-link" href="Statistics.html">Statistics</a>
+                        </li>
+						<li class="nav-item">
+                            <a class="nav-link" href="TermsNConditions.html">Terms & Conditions</a>
+                        </li>
+                    </ul>
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+                            <a class="nav-link" href="Profile.html"><i class="fa fa-user" aria-hidden="true"></i>&nbsp;Profile</a>
+                        </li>
+						
+						<li class="nav-item">
+                            <a class="nav-link" ng-click="SignOut()" title="Sign Out"><i class="fa fa-power-off" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
