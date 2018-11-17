@@ -1,10 +1,12 @@
   
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top scrolling-navbar">
             <div class="container">
-                <a class="navbar-brand" href="index.html"><strong>RASOI</strong></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7" aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation">
+              
+                <button class="navbar-toggler mr-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7" aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+				 <a class="navbar-brand" href="Dashboard.html"><strong style="color:black">RASOI</strong></a>
+				  <a class="navbar-brand ml-auto d-block d-md-none d-sm-none d-lg-none" ng-click="SignOut()" ><strong style="color:#fff"><i class="fa fa-power-off"></i></strong></a>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
                     <ul class="navbar-nav mr-auto afterlogin">
                         <li class="nav-item">
@@ -29,17 +31,17 @@
 						<li class="nav-item">
                             <a class="nav-link" href="Statistics.html">Statistics</a>
                         </li>
-						<li class="nav-item">
+						<!-- <li class="nav-item">
                             <a class="nav-link" href="TermsNConditions.html">Terms & Conditions</a>
-                        </li>
+                        </li> -->
                     </ul>
 					<ul class="navbar-nav ml-auto">
 						<li class="nav-item">
                             <a class="nav-link" href="Profile.html"><i class="fa fa-user" aria-hidden="true"></i>&nbsp;Profile</a>
                         </li>
 						
-						<li class="nav-item">
-                            <a class="nav-link" ng-click="SignOut()" title="Sign Out"><i class="fa fa-power-off" aria-hidden="true"></i></a>
+						<li class="nav-item d-none d-md-block d-sm-block d-lg-block">
+                            <a class="nav-link" title="Sign Out"><i class="fa fa-power-off" aria-hidden="true"></i></a>
                         </li>
                     </ul>
                 </div>
